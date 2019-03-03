@@ -1,0 +1,38 @@
+{
+  "name": "jayjaytut",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint --ext .js,.jsx src",
+    "flow": "flow"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "pokeapi-js-wrapper": "1.1.1",
+    "random-int": "1.0.0",
+    "react": "16.8.3",
+    "react-dom": "16.8.3",
+    "react-scripts": "2.1.5"
+  },
+  "devDependencies": {
+    "babel-eslint": "9.0.0",
+    "empty": "0.10.1",
+    "eslint": "5.12.0",
+    "eslint-config-react-app": "3.0.7",
+    "eslint-plugin-flowtype": "2.50.3",
+    "eslint-plugin-import": "2.16.0",
+    "eslint-plugin-jsx-a11y": "6.2.1",
+    "eslint-plugin-react": "7.12.4",
+    "flow-bin": "0.94.0",
+    "node-sass": "4.11.0"
+  }
+}

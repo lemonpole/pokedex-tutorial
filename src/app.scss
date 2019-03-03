@@ -1,0 +1,70 @@
+#app {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+header {
+  $bgcolor: firebrick;
+  $fontcolor: whitesmoke;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $bgcolor;
+  box-shadow: 0px 20px 90px -20px rgba( black, .50 );
+  border-bottom: 1px solid rgba( $bgcolor, .50 );
+
+  width: 100%;
+  height: 80px;
+
+  font-size: 2em;
+  font-variant: small-caps;
+  color: $fontcolor;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  $bgcolor1: seagreen;
+  $bgcolor2: mediumseagreen;
+  $fontcolor: whitesmoke;
+
+  background: linear-gradient( to bottom, $bgcolor2, $bgcolor1 );
+  border-color:
+    darken( $bgcolor1, 10 )
+    darken( $bgcolor1, 15 )
+    darken( $bgcolor1, 20 )
+  ;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+
+  width: 100%;
+  height: 30px;
+  margin-top: 20px;
+  vertical-align: middle;
+
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: .8em;
+  color: $fontcolor;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.card {
+  $bgcolor: white;
+  $fontcolor: dimgray;
+
+  background-color: transparentize( $bgcolor, .30 );
+  padding: 20px;
+  text-align: center;
+  color: $fontcolor;
+}
