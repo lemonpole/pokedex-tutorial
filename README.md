@@ -1,6 +1,8 @@
 # Jayjaytut
 A very simple pokedex web application example.
 
+![](demo.gif)
+
 Uses the following APIs and technologies:
 - https://pokeapi.co/docs/v2.html
 - Node 10.x

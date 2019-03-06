@@ -21,6 +21,7 @@
     "random-int": "1.0.0",
     "react": "16.8.3",
     "react-dom": "16.8.3",
+    "react-loading": "2.0.3",
     "react-scripts": "2.1.5"
   },
   "devDependencies": {

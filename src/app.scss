@@ -59,12 +59,36 @@ button {
   }
 }
 
+button:disabled {
+  $bgcolor1: steelblue;
+  $bgcolor2: cadetblue;
+  $fontcolor: black;
+
+  background: linear-gradient( to bottom, $bgcolor2, $bgcolor1 );
+  border-color:
+    darken( $bgcolor1, 10 )
+    darken( $bgcolor1, 15 )
+    darken( $bgcolor1, 20 )
+  ;
+
+  cursor: default;
+  color: $fontcolor;
+}
+
 .card {
   $bgcolor: white;
   $fontcolor: dimgray;
 
   background-color: transparentize( $bgcolor, .30 );
+  height: 375px;
   padding: 20px;
   text-align: center;
   color: $fontcolor;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
