@@ -1,0 +1,67 @@
+# Jayjaytut
+
+The idea is to dive into programming. But how?
+
+
+## Pre-reqs and Overview
+
+- Install Node 10.x
+- Install GIT
+- Install VSCode
+- Install useful plugins for VSCode
+- Mobile-first methodology
+
+
+## Version 1.0
+
+### Display Umbreon Pokedex
+
+- Fetch umbreon from the API
+- Show a loading indicator while it's downloading
+- Show Pokedex entry (name and sprite)
+
+### Display Random Pokemon (1st Gen) Pokedex
+
+- Generate a random id between 1-150 for first Gen Pokemon
+- Fetch that chosen id's pokedex information
+
+### Sprucen up the design
+
+- Give it a background color or background image.
+- Wrap the content in a "Card"-like component.
+- Show the pokemon image from the official pokedex page.
+- Need to leftpad pokedex id (001, 018, 112, etc) for the above.
+- Add a header and give it a background color. Add optional things like shadow, font color, etc.
+
+### Add a "Reload" button
+
+- Make it look pretty
+
+
+## Version 2.0
+
+### Show loading spinner
+
+- Consider that there several different async actions going off while gathering the pokemon's pokedex entry. Things like its evolution chain, portrait image, and sprites.
+- Wait for *all* to complete and then show the view.
+- While data is being gathered show a neat little loading icon.
+
+### Disable button while loading
+
+- In order for the parent component to know when the pokedex is done "loading" it can pass in a "onLoadingChange" prop.
+
+
+## Version 3.0
+
+### Show Pokedex entry details
+
+- Create our own `<PokedexEntry />` component and transform the data coming in from several api endpoints into one the view recognizes and renders.
+- Show sprites from evolution line with names underneath
+- Weaknesses and strengths
+- Change favicon to current pokemon's sprite
+
+### Progressive loading
+
+- Replace the loading icon with a recent web trend: progressive loading!
+- Show placeholders for what the final view will look like. Then load things as they come in.
+- Ease the user into the app instead of the jarring transition from a loading state to a completed state.
