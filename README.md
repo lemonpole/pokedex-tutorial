@@ -5,8 +5,11 @@ A very simple pokedex web application example.
 
 Uses the following APIs and technologies:
 - https://pokeapi.co/docs/v2.html
-- Node 10.x
-- `create-react-app` 2.1.x
+- Node `v10.x`
+- React `v16.x`
+  - with Create React App `v2.1.x`
+- Flowtype `v0.94`
+- SASS for css-styling
 
 
 ## Getting Started
