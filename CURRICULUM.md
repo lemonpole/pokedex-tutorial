@@ -42,6 +42,7 @@ The idea is to dive into programming. But how?
 
 ### Show loading spinner
 
+- Create our own `<PokedexEntry />` component and transform the data coming in from several api endpoints into one the view recognizes and renders.
 - Consider that there several different async actions going off while gathering the pokemon's pokedex entry. Things like its evolution chain, portrait image, and sprites.
 - Wait for *all* to complete and then show the view.
 - While data is being gathered show a neat little loading icon.
@@ -55,7 +56,6 @@ The idea is to dive into programming. But how?
 
 ### Show Pokedex entry details
 
-- Create our own `<PokedexEntry />` component and transform the data coming in from several api endpoints into one the view recognizes and renders.
 - Show sprites from evolution line with names underneath
 - Weaknesses and strengths
 - Change favicon to current pokemon's sprite
