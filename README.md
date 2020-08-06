@@ -15,5 +15,5 @@ Uses the following APIs and technologies:
 $ git clone https://github.com/lemonpole/pokedex-tutorial
 
 $ cd pokedex-tutorial
-$ yarn && yarn
+$ yarn && yarn start
 ```
