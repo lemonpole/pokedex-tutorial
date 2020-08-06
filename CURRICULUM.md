@@ -1,4 +1,4 @@
-# Jayjaytut
+# Pokédex Tutorial
 
 The idea is to dive into programming. But how?
 
@@ -20,10 +20,12 @@ The idea is to dive into programming. But how?
 - Show a loading indicator while it's downloading
 - Show Pokedex entry (name and sprite)
 
+
 ### Display Random Pokemon (1st Gen) Pokedex
 
 - Generate a random id between 1-150 for first Gen Pokemon
 - Fetch that chosen id's pokedex information
+
 
 ### Sprucen up the design
 
@@ -32,6 +34,7 @@ The idea is to dive into programming. But how?
 - Show the pokemon image from the official pokedex page.
 - Need to leftpad pokedex id (001, 018, 112, etc) for the above.
 - Add a header and give it a background color. Add optional things like shadow, font color, etc.
+
 
 ### Add a "Reload" button
 
@@ -47,6 +50,7 @@ The idea is to dive into programming. But how?
 - Wait for *all* to complete and then show the view.
 - While data is being gathered show a neat little loading icon.
 
+
 ### Disable button while loading
 
 - In order for the parent component to know when the pokedex is done "loading" it can pass in a "onLoadingChange" prop.
@@ -59,6 +63,7 @@ The idea is to dive into programming. But how?
 - Show sprites from evolution line with names underneath
 - Weaknesses and strengths
 - Change favicon to current pokemon's sprite
+
 
 ### Progressive loading
 
