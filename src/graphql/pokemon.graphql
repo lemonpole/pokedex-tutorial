@@ -1,0 +1,6 @@
+query pokemon($id: Int!) {
+  pokemon_v2_pokemon_by_pk(id: $id) {
+    id
+    name
+  }
+}

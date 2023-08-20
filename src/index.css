@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div#root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+img {
+  height: auto;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+@import url(./app.css);

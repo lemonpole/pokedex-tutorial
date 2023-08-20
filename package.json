@@ -1,0 +1,86 @@
+{
+  "name": "pokedex-tutorial",
+  "version": "0.1.0",
+  "description": "A very simple Pokédex web application example",
+  "author": "Steve Rivera",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/lemonpole/pokedex-tutorial",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lemonpole/pokedex-tutorial.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lemonpole/pokedex-tutorial/issues"
+  },
+  "keywords": [
+    "create-react-app",
+    "pokédex",
+    "pokedex",
+    "pokémon",
+    "pokemon",
+    "react-tutorial"
+  ],
+  "scripts": {
+    "build": "react-scripts build",
+    "build:graphql": "graphql-codegen",
+    "dev": "concurrently \"npm start\" \"npm run build:graphql --watch\"",
+    "eject": "react-scripts eject",
+    "postinstall": "npm run build:graphql",
+    "prepare": "husky install",
+    "start": "react-scripts start"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "7.21.11",
+    "@commitlint/cli": "17.7.1",
+    "@commitlint/config-conventional": "17.7.0",
+    "@graphql-codegen/cli": "5.0.0",
+    "@graphql-codegen/client-preset": "4.1.0",
+    "@types/lodash": "4.14.197",
+    "@types/node": "16.18.40",
+    "@types/react": "18.2.20",
+    "@types/react-dom": "18.2.7",
+    "concurrently": "8.2.0",
+    "eslint-config-prettier": "^9.0.0",
+    "husky": "^8.0.0",
+    "prettier": "3.0.1",
+    "react-scripts": "5.0.1",
+    "typescript": "4.9.5"
+  },
+  "dependencies": {
+    "@apollo/client": "3.8.1",
+    "graphql": "16.8.0",
+    "lodash": "4.17.21",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-loading": "2.0.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "prettier"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "codegen": {
+    "schema": "https://beta.pokeapi.co/graphql/v1beta",
+    "documents": "src/**/*.graphql",
+    "ignoreNoDocuments": true,
+    "overwrite": true,
+    "generates": {
+      "src/graphql/generated/": {
+        "preset": "client"
+      }
+    }
+  }
+}
