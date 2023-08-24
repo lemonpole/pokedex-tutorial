@@ -1,22 +1,30 @@
 # Pokédex Tutorial
 
-Please visit the [documentation](https://lemonpole.gitbook.io/pokedex-tutorial/) for a step-by-step guide on how to recreate this project's final product.
+<img src="public/demo.png" alt="demo" width="33%" height="auto" />
 
-## Cropping and Creating GIFs
+This repo contains the starter code to create a simple Pokédex web application.
 
-> 📝 **NOTE**: You will need to install [ffmpeg](https://ffmpeg.org/download.html) and ensure it is available in your `PATH` environment variable.
+Follow along [here](https://lemonpole.gitbook.io/pokedex-tutorial/).
 
-In working on this tutorial it may be necessary to create a GIF and crop it as well.
+## Notes
 
-Below is how to make a _high quality_ GIF while cropping from the original source.
+### Creating GIFs
+
+As an alternative to using online GIF creation services, creating high quality GIFs (with a small file size) can be done from your computer using [ffmpeg](https://ffmpeg.org/download.html).
+
+```bash
+ffmpeg -y -i input.mp4 -vf "fps=10,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" output.gif
+```
+
+The key is to use a mixture of `palettegen` and `paletteuse` as expertly explained in this [Stack Overflow answer](https://superuser.com/a/556031).
+
+You can also crop videos, which is useful if you're looking to make a GIF from a larger screen recording. The filter arguments are:
+
+- `485` width
+- `400` height
+- `2px` x-offset
+- `1px` y-offset
 
 ```bash
 ffmpeg -y -i input.mp4 -vf "crop=485:400:2:1,fps=10,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" output.gif
 ```
-
-The crop syntax is:
-
-- Width
-- Height
-- X offset
-- Y offset
