@@ -1,6 +1,6 @@
 # Pokédex Tutorial
 
-<img src="public/demo.png" alt="demo" width="33%" height="auto" />
+<img src="public/demo.png" alt="demo" width="50%" height="auto" />
 
 This repo contains the starter code to create a simple Pokédex web application.
 
